@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./font/Lato-Regular.ttf");
+}
+
+body {
+  font-family: "Lato-Regular" !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  min-height: calc(100vh - 78px - 71px);
+}
