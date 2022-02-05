@@ -39,11 +39,11 @@ export const validateCategory = (field) => {
   if (
     regExpCategory.test(field) &&
     field.trim() !== "" &&
-    (field === "bebida-caliente" ||
-      field === "bebida-fria" ||
-      field === "sandwitch" ||
-      field === "dulce" ||
-      field === "salado")
+    (field === "hot drinks" ||
+      field === "cold drinks" ||
+      field === "sandwich" ||
+      field === "sweet" ||
+      field === "salty")
   ) {
     return true;
   } else {
