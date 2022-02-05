@@ -40,7 +40,7 @@ function App() {
             <Route
               exact
               path="/productTable"
-              element={<ProductsTable products={products} />}
+              element={<ProductsTable products={products} db={db} getApi={getApi} />}
             />
             <Route
               exact

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Product from "./Product/Product";
 
 
-const ProductTable = ({products}) => {
+const ProductTable = ({products, db, getApi}) => {
   return (
     <div>
       <Container className="py-5">
@@ -26,7 +26,7 @@ const ProductTable = ({products}) => {
             </tr>
           </thead>
           <tbody>
-            {products.map((product, key)=> <Product key={product.id} product={product}/>)}
+            {products.map((product, key)=> <Product key={product.id} product={product} db={db} getApi={getApi}/>)}
      
           </tbody>
         </Table>
