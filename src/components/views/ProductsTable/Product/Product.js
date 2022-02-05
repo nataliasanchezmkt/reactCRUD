@@ -14,7 +14,7 @@ const Product = ({product}) => {
       <td> {product.category}</td>
       <td className="w-25">
         <div className="d-flex justify-content-center">
-          <Link to='/productEdit'className="btn-orange mx-1 text-decoration-none text-center">Update</Link>
+          <Link to={`/productEdit/${product.id}`}className="btn-orange mx-1 text-decoration-none text-center">Update</Link>
           <button className="btn-red mx-1">Delete</button>
         </div>
       </td>

@@ -1,24 +1,24 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Flat White",
-      "price": "$500",
+      "name": "Coca cola",
+      "price": "Coca cola",
       "url": "http://cualquiecosa.com",
-      "category": "Hot drinks"
+      "category": "cold drinks",
+      "id": 1
     },
     {
       "id": 2,
       "name": "Mocca",
-      "price": "$500",
+      "price": "500",
       "url": "http://cualquiecosa.com",
       "category": "Hot drinks"
     },
     {
-      "productName": "",
-      "productPrice": 0,
-      "productUrl": "",
-      "productCategory": "",
+      "name": "Cookies",
+      "price": "Cookies",
+      "url": "http://cualquiecosa.com",
+      "category": "sweet",
       "id": 3
     },
     {

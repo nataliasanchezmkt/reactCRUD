@@ -47,7 +47,7 @@ function App() {
               path="/productCreate"
               element={<ProductCreate db={db} getApi={getApi} />}
             />
-            <Route exact path="/productEdit" element={<ProductEdit />} />
+            <Route exact path="/productEdit/:id" element={<ProductEdit db={db} getApi={getApi} />} />
             <Route exact path="/*" element={<Error404 />} />
           </Routes>
         </main>
