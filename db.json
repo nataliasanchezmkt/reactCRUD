@@ -2,18 +2,15 @@
   "products": [
     {
       "id": 1,
-      "productName": "Flat White",
-      "price": "typicode",
+      "name": "Flat White",
+      "price": "$500",
       "url":"http://cualquiecosa.com",
       "category":"Hot drinks"
     },
     {
-
-    
-    
       "id": 2,
-      "productName": "Mocca",
-      "price": "typicode",
+      "name": "Mocca",
+      "price": "$500",
       "url":"http://cualquiecosa.com",
       "category":"Hot drinks"
     }
