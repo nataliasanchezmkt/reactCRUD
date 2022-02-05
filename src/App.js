@@ -36,7 +36,7 @@ function App() {
         <Navigation />
         <main>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Home products={products}/>} />
             <Route
               exact
               path="/productTable"

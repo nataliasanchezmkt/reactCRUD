@@ -1,18 +1,3 @@
 {
-  "products": [
-    {
-      "name": "Coca cola",
-      "price": "Coca cola",
-      "url": "http://cualquiecosa.com",
-      "category": "cold drinks",
-      "id": 1
-    },
-    {
-      "name": "Cookies",
-      "price": "Cookies",
-      "url": "http://cualquiecosa.com",
-      "category": "sweet",
-      "id": 3
-    }
-  ]
+  "products": []
 }

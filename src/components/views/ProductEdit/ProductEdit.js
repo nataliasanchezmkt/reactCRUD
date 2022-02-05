@@ -56,7 +56,7 @@ const handleSubmit= (e) =>{
 
   const productUpdated = {
     name : productNameRef.current.value,
-    price: productNameRef.current.value,
+    price: productPriceRef.current.value,
     url: productUrlRef.current.value,
     category: product.category
   };

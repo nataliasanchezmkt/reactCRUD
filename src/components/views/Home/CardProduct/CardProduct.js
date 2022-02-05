@@ -2,26 +2,23 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const CardProduct = () => {
+const CardProduct = ({product}) => {
   return (
     <div>
       <Card className="my-4">
         <Card.Img
           className="img-fluid"
           variant="top"
-          src="https://media.istockphoto.com/photos/two-freshly-baked-french-croissants-with-butter-and-a-knife-picture-id1277579771?k=20&m=1277579771&s=612x612&w=0&h=n9_na7BUAUAH8UFtzVEmDz77rmRhvuK_mh63in6r660="
+          src={product.url}
         />
         <Card.Body>
           <div className="d-flex align-items-center justify-content-between mb-2">
-            <Card.Title className="m-0 text-truncate">Card Title</Card.Title>
+            <Card.Title className="m-0 text-truncate">{product.name}</Card.Title>
             <span className="badge bg-yellow">New</span>
           </div>
-          <Card.Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id,
-            voluptate necessitatibus ex eius sunt!
-          </Card.Text>
+          
           <div className="d-flex align-items-center justify-content-between">
-            <p className="mb-0 ms-4 fs-4 ">$200</p>
+            <p className="mb-0 ms-4 fs-4 ">${product.price}</p>
             <Link to='/buy'className="btn-gray te xt-decoration-none text-center">Buy</Link>
           </div>
         </Card.Body>
