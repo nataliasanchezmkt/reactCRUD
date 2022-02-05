@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Flat White",
+      "price": "typicode",
+      "url":"http://cualquiecosa.com",
+      "category":"Hot drinks"
+    },
+    {
+
+    
+    
+      "id": 2,
+      "productName": "Mocca",
+      "price": "typicode",
+      "url":"http://cualquiecosa.com",
+      "category":"Hot drinks"
+    }
+  ]
+}
