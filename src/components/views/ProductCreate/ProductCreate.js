@@ -56,6 +56,7 @@ const ProductCreate = ({ db, getApi }) => {
             },
             body: JSON.stringify(newProduct),
           });
+          console.log(res)
 
           if (res.status === 201) {
             Swal.fire("Created!", "Your file has been created.", "success");

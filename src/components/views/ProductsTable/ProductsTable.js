@@ -10,7 +10,7 @@ const ProductTable = ({products, db, getApi}) => {
       <Container className="py-5">
         <div className="d-flex align-items-center justify-content-between">
           <h1>Products Table</h1>
-          <Link to='/productCreate'className="btn-yellow text-decoration-none text-center">Add Product </Link>
+          <Link to='/turnos'className="btn-yellow text-decoration-none text-center">Add Product </Link>
         </div>
         <hr />
         {/* Table of products */}
@@ -27,7 +27,7 @@ const ProductTable = ({products, db, getApi}) => {
             </tr>
           </thead>
           <tbody>
-            {products.map((product, key)=> <Product key={product.id} product={product} db={db} getApi={getApi}/>)}
+            {products.map((product, key)=> <Product key={product._id} product={product} db={db} getApi={getApi}/>)}
      
           </tbody>
         </Table>

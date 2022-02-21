@@ -1,3 +1,25 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": "Flat White",
+      "price": "350",
+      "url": "https://sweetalert2.github.io/#usage",
+      "categroy": "hot drinks",
+      "id": 1
+    },
+    {
+      "name": "Cafe",
+      "price": "34",
+      "url": "https://sweetalert2.github.io/#usage",
+      "categroy": "hot drinks",
+      "id": 2
+    },
+    {
+      "name": "Cafe",
+      "price": "34",
+      "url": "https://sweetalert2.github.io/#usage",
+      "categroy": "hot drinks",
+      "id": 3
+    }
+  ]
 }
