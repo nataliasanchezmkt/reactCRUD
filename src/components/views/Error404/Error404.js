@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Error404.css";
+import Navigation from '../../layout/Navigation'
 
 const Error404 = () => {
   return (
     <div>
+      <Navigation/>
       <div className="main">
         <svg
           xmlns="http://www.w3.org/2000/svg"

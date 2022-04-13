@@ -1,12 +1,28 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Table } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Product from "./Product/Product";
+import Navigation from '../../layout/Navigation'
+
 
 
 const ProductTable = ({products, db, getApi}) => {
+  const navigate = useNavigate();
+  const session = JSON.parse(sessionStorage.getItem("stateSession")) || false;
+
+  const checkSession=()=>{
+    if (!session) {
+      navigate("/Login");
+    }      
+  }
+
+  useEffect(()=>{
+    checkSession();
+  },[]);
+  
   return (
     <div>
+      <Navigation/>
       <Container className="py-5">
         <div className="d-flex align-items-center justify-content-between">
           <h1>Products Table</h1>

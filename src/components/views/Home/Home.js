@@ -2,10 +2,13 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import CardProduct from "./CardProduct/CardProduct";
 import CarouselHome from "./CarouselHome/CarouselHome";
+import Navigation from '../../layout/Navigation'
 
 const Home = ({products}) => {
   return (
+    
     <div>
+      <Navigation/>
       {/* Carousel */}
       <CarouselHome />
       {/* Products */}

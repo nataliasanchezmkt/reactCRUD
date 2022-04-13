@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Container, Form } from "react-bootstrap";
 import {
   validateCategory,
@@ -8,8 +8,25 @@ import {
 } from "../../helpers/ValidateFields";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import Navigation from '../../layout/Navigation'
 
 const ProductCreate = ({ db, getApi }) => {
+
+  const redirect = useNavigate();
+  const session = JSON.parse(sessionStorage.getItem("stateSession")) || false;
+
+  const checkSession=()=>{
+    if (!session) {
+      redirect("/Login");
+    }      
+  }
+
+  useEffect(()=>{
+    checkSession();
+  },[]);
+
+
+
   const [name, setname] = useState("");
   const [price, setprice] = useState(0);
   const [url, seturl] = useState("");
@@ -72,6 +89,7 @@ const ProductCreate = ({ db, getApi }) => {
 
   return (
     <div>
+      <Navigation/>
       <Container className="py-5">
         <h1>Add Product</h1>
         <hr />

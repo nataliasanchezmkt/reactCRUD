@@ -8,7 +8,29 @@ import {
   validatePrice,
 } from "../../helpers/ValidateFields";
 import Swal from "sweetalert2";
+import Navigation from '../../layout/Navigation'
+
+
+
+
 const ProductEdit = ({db, getApi}) => {
+
+
+  const redirect = useNavigate();
+  const session = JSON.parse(sessionStorage.getItem("stateSession")) || false;
+
+  const checkSession=()=>{
+    if (!session) {
+      redirect("/Login");
+    }      
+  }
+
+  useEffect(()=>{
+    checkSession();
+  },[]);
+
+
+
 const [product, setProduct] = useState({});
 // Parametros
 const {id} = useParams()
@@ -96,6 +118,7 @@ const handleSubmit= (e) =>{
 }
   return (
     <div>
+      <Navigation/>
       <Container className="py-5">
         <h1>Edit Product</h1>
         <hr />
